@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("membros")
 public class MembroController extends GenericController<MembroEntity, MembroEntity, MembroService> {
-    public MembroController(String controllerMapping, MembroService service) {
-        super(controllerMapping, service);
+    public MembroController(MembroService service) {
+        super(service);
     }
 }

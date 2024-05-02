@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 @RequiredArgsConstructor
 @Slf4j
-public abstract class GenericServiceImpl<E, DTO, R extends JpaRepository<E, Long>> implements GenericService<E, DTO> {
+public abstract class GenericServiceImpl<E, DTO, R extends JpaRepository<E, Long>> {
 
     private final R repository;
 

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("livros")
 public class LivroController extends GenericController<LivroEntity, LivroEntity, LivroService> {
-    public LivroController(String controllerMapping, LivroService service) {
-        super(controllerMapping, service);
+    public LivroController(LivroService service) {
+        super(service);
     }
 }
