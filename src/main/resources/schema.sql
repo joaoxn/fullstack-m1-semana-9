@@ -1,7 +1,8 @@
 CREATE TABLE IF NOT EXISTS livro
 (
     id         BIGSERIAL PRIMARY KEY,
-    titulo       VARCHAR(120) NOT NULL,
+    titulo     VARCHAR(120) NOT NULL,
+    autor      VARCHAR(80),
     data_publicacao DATE
 );
 
